@@ -1,3 +1,0 @@
-# Brief Reaction to Wireframing Article
-
-After reading the article on wireframing, I appreciate how it emphasizes the important considerations for wireframing. The article shows many ways to start a project before diving into the designs, such as clarifying the problem. It’s important to discover the problem before finding a solution, which means understanding what the project is and identifying the problems that need to be solved. The article also mentions that sketching is a good way to talk through the problems of the project. Sketching can also help generate ideas and critical questions. Overall, I found this article to be useful for wireframing. 
