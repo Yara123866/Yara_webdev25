@@ -1,0 +1,80 @@
+/*Global Styles */
+* {
+    box-sizing: bordder-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Flexbox Simple Row Layouts */
+
+/* Base Styles */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* some styles s0 we can see our containers */
+    border: 1px solid purple;
+    background-color: rgba(255, 0, 225, 0.3);
+    min-height: 400px;
+}
+
+.item {
+    border: 1px solid cornflowerblue;
+    background-color: (0, 0 ,255, 0.3 );
+    width: 23%;
+    height: 300px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Atomic Styles */
+.justify-start {
+    justify-content: flex-start;
+}
+
+    .justify-end {
+        justify-content: center;
+    }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    .justify-around {
+        justify-content: space-around;
+    }
+
+    .justify-even {
+        justify-content: space-evenly;
+    }
+
+    .align-start {
+        align-items: flex-end;
+    }
+
+    .align-center {
+        align-items: center;
+    }
+
+    .align-stretch {
+        align-items: stretch;
+        /* need to override defined height of 300px
+         so that this item can stretch beyond */
+         height: auto;
+
+    }
+
+
+
+
