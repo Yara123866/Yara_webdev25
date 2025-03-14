@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+.palettes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#one, #two, #three, #four, #five {
+    height: 600px;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#oneHead, #twoHead, #threeHead, #fourHead, #fiveHead {
+    font-size: 10px;
+    margin-bottom: 40px;
+
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+#randomButton {
+    border: none;
+    border-bottom: 1px solid rgb(8, 59, 77);
+    outline: none;
+    width: 20%;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+}
