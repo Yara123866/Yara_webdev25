@@ -87,13 +87,13 @@
       
     @media(max-width: 768px){
                 body{
-                    color: aquamarine;
+                    color: rgb(0, 7, 5);
                 }
             }
 
     @media(max-width: 768px){
         h1{
-            font-size: 30%;
+            font-size: 200%;
         }
     }
 
@@ -111,8 +111,9 @@
 
     @media(max-width: 768px){
         button{
-            font-size: 10px;
+            font-size: 5px;
             right: 1px;
+            
         }
     }
 
@@ -121,4 +122,11 @@
             top: 50px;
         }
     }
+
+    @media(max-width: 768px){
+    li {
+        line-height: 1px;
+        font-size: 15px;
+        } 
+    }  
             
