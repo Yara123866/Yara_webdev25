@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guess The Number Game</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Guess The Number!</h1>
+        <p>See if you can guess the random number between 1 and 100.</p>
+        <div class="guessing-area">
+            <label for="guessBox">Enter a random number:</label>
+
+            <input 
+            type="text"
+            id="guessBox"
+            class="guessBox">
+
+            <input 
+            type="submit"
+            value="Submit guess"
+            class="submitguess"
+            id="submitguess">
+        </div>
+
+    <script type="text/javascript">
+
+        let randomNumber = Math.floor(Math.random() * 100 + 1);
+
+        let guess = 0;
+
+        document.getElementById("submitguess").onclick = function () {
+            let userGuess = document.getElementById("guessBox").value;
+
+            //I used "guess++"" to track the number of guesses so it can tell me how many times I tried after inputting the correct number.
+
+            if (userGuess == randomNumber) {
+                alert("Congratulations!!!  YOU GUESSED THE NUMBER AFTER " + guess + " GUESSES.");
+            } 
+            
+            else if (userGuess > randomNumber) {
+                guess++;
+                alert("OOPS! SORRY TRY A SMALLER NUMBER");
+            } 
+            else {
+                guess++;
+                alert("OOPS! SORRY TRY A BIGGER NUMBER")
+
+            }
+        }
+        
+
+        </script>
+        </body>
+</html>
+        
+      
