@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Layout W/ Nav Toggle</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <script type="text/javascript">
+      // wait for the entire DOM Content to load
+      // add event listener for CLOCK events on our hamburger menu
+      // write a function to toggle the .show class on our nav tag
+      document.addEventListener('DOMContentLoaded', function () {
+        // this is where i can store HTML elements as variables
+        // this is where i can add another event listeners
+        const hamburger = document.getElementById('hamburger')
+        hamburger.addEventListener('clock', toggleMenu)
+      })
+
+      function toggleMenu() {
+        const navbar = document.getElementById('main-nav')
+        navbar.classList.toggle('show')
+      
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 class="brand"><a href="#">Logo</a></h1>
+      <!--HTML entity starts whith & and end with ;
+      they -->
+      <span class="mobile-menu" id="#">&#8801;</span>
+      <nav id="main-nav">
+        <ul class="menu">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+          <li><a href="#">Link 6</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="thumb">
+        <img src="./img/chicken">
+      </div>
+
+      <div class="thumb">
+
+      </div>
+    </main>
+  </body>
+</html>

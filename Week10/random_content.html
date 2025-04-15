@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Random Content: Math + Arrays</title>
+    <script type="text/javascript">
+      // make an array of img sources containing goats off the internet
+      const arrImg = [
+        ''
+      ]
+      // make an array of links to the pages that contain that image
+      const arrLinks = [
+        ''
+      ]
+
+      // helper function for picking a random number in our array
+      function randomIndex(max) {
+        return Math.floor(Math.random() * max)
+      }
+
+      // write our own random image/link function outside of event listeners 
+      // but remeber we should not call it until the DOM is fully loaded
+      function loadRandomImage() {
+        const index = randomIndex(arrImg.length)
+        const img = document.getElementById('animal')
+        const link = document.getElementById('dynLink')
+
+        img.src = arrImg[index]
+        link.href = arrLinks[index]
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        // get elements by ID and store them in global variables
+        // assign any other event listeners to element on the page
+        // call functions we want to fire when the page loads
+        loadRandomImage()
+      })
+
+      // document.addEventListener('DOMContentLoaded', loadedRandomImage)
+    </script>
+  </head>
+  <body>
+    <a href="#" target="_blank" id="dynLink">
+      <img src="" id="animal" alt="A random photo of a goat" 
+    /></a>
+  </body>
+</html>

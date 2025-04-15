@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User Input | Switch Statements</title>
+    <style type="text/css">
+        h1 {
+            text-transform: uppercase;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: rgba(0, 0, 200, 0.7)
+        }
+
+        .green {
+            color: #00ff00;
+        }
+    </style>
+    <script type="text/javascript"></script>
+  </head>
+  <body>
+    <h1 id="changeMe">Get user input to change my style!</h1>
+
+    <form>
+        <fieldset>
+            <legend>Pick a Number between 0 and 3</legend>
+            <!-- input that ac cepts only whole numbers between 0 and 3 -->
+             <input 
+             type="number" 
+             name="num" 
+             id="num" 
+             min="0" 
+             max="3" 
+             step="1" 
+             required 
+             />
+             <button type="submit" id="chnageBtn" class="btnClass" >
+
+                click to change the color class in h1
+             </button>
+
+        </fieldset>
+    </form>
+  </body>
+</html>

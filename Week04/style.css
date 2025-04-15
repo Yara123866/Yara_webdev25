@@ -34,10 +34,59 @@ img {
 /* Navigation */
 header {
     width: 100%;
+    height: 50px;
     padding: 0 10%;
     background-color: red;
-    height: 50px;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: grey;
+    /* flex container properties */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
 }
+
+header h1 {
+color: purple
+}
+
+nav ul{
+  dsiplay: flex;
+  list-style-type: none;
+  text-align: center;
+  background-color: rgba(40, 40, 40, 0.5);
+}
+
+nav li {
+  font-size: 18px;
+  width: 120;
+  height: 50px;
+  line-height: 50px;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color:#333; 
+  /* we always define transitions on the base/default state */
+  transition: all ls linear;
+}
+
+nav a:hover {
+  background-color: rgba(40, 40, 40, 0.5);
+  color: white;
+  
+}
+
+nav a.active {
+  background-color: black;
+  color: white;
+}
+
 /* GALLERY */
 
 .container {
@@ -74,3 +123,84 @@ header {
   text-align: center;
   color: #333;
 }
+
+/* TRANSFORMS AND TRANSITIONS */
+
+.scaleup {
+  transform: scale(1.5);
+  /* z-index: 10; */
+}
+
+.scaleup {
+  transform: scale(1.2);
+  /* z-index: 10; */
+}
+
+.scaleX {
+  transform: scale(2, 1);
+
+}
+
+.scaleY {
+  transform: scaleY(2);
+}
+
+.skewX {
+  transform: skewX(-20deg);
+  transform-origin: top;
+}
+
+.skewY {
+  transform: skewY(-20deg);
+}
+
+.skewBoth {
+  transform: skew(10deg, 40deg);
+}
+
+.rotX {
+  transform: rotateX(180deg);
+}
+
+.rotY {
+  transform: rotateY(180deg);
+}
+
+.rotZ {
+  transform: rotateZ(180deg);
+}
+
+.rotateLeft {
+  transform: rotate(-20deg);
+  transform-origin: botoom right;
+  transition: all 5s ease-out;
+}
+
+.rotateLeft:hover {
+  transform: rotate(20deg);
+}
+
+.skewHover {
+  transform: skewX(30deg);
+  transition: all 5s ease-out;
+}
+
+.skewHover:hover {
+  transform: skewX(-30deg);
+}
+
+.scaleHover {
+  transform: scale(0.5);
+  transition: all 3s ease-in;
+}
+
+.scaleHover:hover {
+  transform: scale(1.2);
+}
+
+/* Filters */
+.colorswap  {
+  filter: grayscale(100%);
+  transition: all 5s linear;
+}
+
