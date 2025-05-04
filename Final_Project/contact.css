@@ -1,0 +1,197 @@
+body{
+    background-color: rgb(240, 113, 113) !important;
+  
+   }
+    :root {
+      --c-bg: #e2e8f0;
+      --c-text: #475569;
+      --c-bg-btn: #1e293b;
+      --c-btn-hover: #64748b;
+      --c-btn-text: #f8fafc;
+      --ff-heading: 'Press Start 2P', system-ui;
+      --ff-body: 'Share Tech Mono', monospace;
+    }
+
+    /* Apply different IDs for Different Color Themes */
+    #green {
+      --c-bg: #a7f3d0;
+      --c-text: #065f46;
+      --c-bg-btn: #059669;
+      --c-btn-hover: #065f46;
+      --c-btn-text: #ecfdf5;
+    }
+
+    #blue {
+      --c-bg:  rgb(240, 113, 113) ;
+      --c-text: #104891;
+      --c-bg-btn: #ed166c;
+      --c-btn-hover: #2dd81d;
+      --c-btn-text: #eff6ff;
+    }
+
+    /* Base Styles */
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+    }
+    .container {
+      width: 50%;
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 0 auto;
+      color: var(--c-text);
+      background-color: var(--c-bg);
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .label-lg {
+      font-size: 2rem;
+    }
+
+    .input-lg {
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      /* make the border color a css var */
+      border: 1px solid grey;
+      margin-right: 3rem;
+    }
+
+    .message-area {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+
+    .message {
+      height: 16rem;
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+
+    .btn-bar {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .btn-dark {
+      width: 100%;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      font-size: 2rem;
+      background-color: var(--c-bg-btn);
+      color: var(--c-btn-text);
+    }
+
+    .btn-dark:hover {
+      background-color: var(--c-btn-hover);
+    }
+
+    #tech h1 {
+      font-family: var(--ff-heading);
+    }
+
+    body#tech,
+    body#tech button,
+    body#tech input,
+    body#tech textarea {
+      font-family: var(--ff-body);
+    }
+
+    .navbar {
+        border: 100px solid rgb(44, 9, 115);
+        border-width: 6px 8px 6px 8px;
+        width: 100%;
+        background-color: rgb(9, 9, 151);
+        padding: 1px;
+        top: 0;
+        left: 0px;
+        position: relative;
+        height: 50px;
+      }
+
+      .navbar-heading {
+        position:absolute;
+        color: aliceblue;
+        margin-top: 0px;
+      
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 20px;
+        margin: 0;
+        list-style: none;
+        color: aliceblue;
+       
+      
+      }
+
+      .color:hover{
+        background-color: #fbf9f9;
+      }
+
+      .dropdown-menu .dropdown-item:hover {
+        color: rgb(13, 170, 243);
+        background-color: aquamarine;
+        font-size: 20px;
+        font-weight: bold;
+       }
+
+       .dropdown-item {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+       }
+      
+      .color:hover .rgb-code {
+        margin-top: 80px;
+        font-size: 14px;
+        color: #fbf9f9;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+
+
+      button:hover {
+        color:aqua;
+        background-color:blue;
+      }
+      
+      .navbar-nav ul li a:hover {
+        background-color: aliceblue;
+        color: black;
+        border-radius: 5px;
+      }
+
+      .nav-link.dropdown-toggle {
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      
+      .dropdown-menu {
+        background-color: rgb(208, 255, 127);
+    }  
+     
+
+    @media(max-width: 768px){
+    .navbar-heading {
+        position:absolute;
+        color: aliceblue;
+        margin-top: 0px;
+        left: 150px;
+      
+      }
+    }
+
+    

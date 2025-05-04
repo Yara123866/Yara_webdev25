@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Me</title>
+    <meta name="description" content="Method 1 - Page Names in File Name" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="contact.css">
+   
+  </head>
+  <body id="tech">
+    <nav class="navbar navbar-expand-lg background-color">
+      <div class="container-fluid">
+        <h1 class="navbar-heading">Contact Us!</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Options</a>
+            <ul class="dropdown-menu">
+              <li><a href="inspire.html" class="dropdown-item">Inspiration</a></li>
+              <li><a href="about.html" class="dropdown-item">About</a></li>
+              <li><a href="palettes.html" class="dropdown-item">Palette Generator</a></li>
+              <li><a href="index.html" class="dropdown-item">Home</a></li>
+            </ul>
+            </li>
+          </ul>
+        </div>
+      
+  </nav>
+    <div class="container" id="blue">
+    
+      <form action="https://formspree.io/f/mjkykoba" method="POST">
+        <div class="row">
+          <label for="name" class="label-lg">Name:</label>
+          <input type="text" name="name" required class="input-lg" />
+
+          <label for="email" class="label-lg">Email:</label>
+          <input type="email" name="email" required class="input-lg" />
+        </div>
+
+        <div class="message-area">
+          <label for="message" class="label-lg">Send us a message</label>
+          <textarea name="message" required class="message"></textarea>
+        </div>
+
+        <div class="btn-bar">
+          <button type="submit" class="btn-dark">Send</button>
+        </div>
+        <!-- Hidden input to store/format my message subject -->
+        <input
+          name="subject"
+          type="hidden"
+          value="New Submission from {{name}}"
+        />
+      </form>
+    </div>
+    <script> document.addEventListener("DOMContentLoaded", function () {
+      let dropdownButton = document.querySelector(".dropdown-toggle");
+      let dropdownMenu = document.querySelector(".dropdown-menu");
+  
+      dropdownButton.addEventListener("click", function () {
+        if (dropdownMenu.classList.contains("show")) {
+          dropdownMenu.classList.remove("show");
+          dropdownButton.setAttribute("aria-expanded", "false");
+        } else {
+          dropdownMenu.classList.add("show");
+          dropdownButton.setAttribute("aria-expanded", "true");
+        }
+        });
+      });</script>
+    
+ 
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Us Site 1</title>
+    <meta name="description" content="Method 1 - Page Names in File Name" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="about.css">
+
+    
+  </head>
+
+  <body>
+
+    <nav class="navbar-nav">
+          
+      <nav class="navbar navbar-expand-lg background-color">
+          <div class="container-fluid">
+              <h1 class="navbar-heading">Website Purpose</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+          <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Options</a>
+                <ul class="dropdown-menu">
+                  <li><a href="inspire.html" class="dropdown-item">Inspiration</a></li>
+                  <li><a href="contact.html" class="dropdown-item">Contact</a></li>
+                  <li><a href="palettes.html" class="dropdown-item">Palette Generator</a></li>
+                  <li><a href="index.html" class="dropdown-item">Home</a></li>
+                </ul>
+                </li>
+              </ul>
+            </div>
+          
+      </nav>
+
+     
+     
+
+    <p>
+        The color generator website is a website that allows 
+        you to explore color palettes and generate complementary colors. 
+        This site is great for web desingers and graphic designers if they want to use color 
+        schemes for their designs. It's also great for helping you select the right color 
+        that you'll need for your designs, which includes websites, apps, and even graphic elements, 
+        illustrator, and more. When you're feeling stuck, the color generator can suggest 
+        unique combinations you might not have thought of, sparking new ideas for your 
+        projects. 
+    </p>
+
+    <div class="image-container">
+            
+      <img 
+  src="https://miro.medium.com/v2/resize:fit:915/0*4DpFVUP_VfkhzSIL" 
+  class="image-1"
+  alt="first Image"
+  style="width: 50%"
+  style="height: 50%"
+  /> 
+      <img 
+        src="http://1.bp.blogspot.com/-2jxaBCo8XeE/Ui5JDhku7cI/AAAAAAAABAE/eKKHd3NX-g0/s1600/tertiary-color-wheel-filled-in.jpg" 
+        class="image-2"
+        alt="second Image"
+        style="width: 40%"
+        style="height: 40%"
+    />
+   
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let dropdownButton = document.querySelector(".dropdown-toggle");
+    let dropdownMenu = document.querySelector(".dropdown-menu");
+
+    dropdownButton.addEventListener("click", function () {
+      if (dropdownMenu.classList.contains("show")) {
+        dropdownMenu.classList.remove("show");
+        dropdownButton.setAttribute("aria-expanded", "false");
+      } else {
+        dropdownMenu.classList.add("show");
+        dropdownButton.setAttribute("aria-expanded", "true");
+      }
+      });
+    });
+  
+ </script>
+ 
+
+  </body>
+</html>
